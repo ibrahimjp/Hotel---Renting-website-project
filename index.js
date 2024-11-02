@@ -56,9 +56,9 @@ app.get("/listings/:id/edit", async (req,res) => {
 });
 
 // Update Route
-app.put("/listings/:id" ,(req,res) => {
+app.put("/listings/:id" ,async (req,res) => {
     let {id} =req.params;
-    Listing.findByIdAndUpdate(id,{...req.body.listing});
+     await Listing.findByIdAndUpdate(id,{...req.body.listing});
     res.redirect("/listings");
 });
 
@@ -66,7 +66,7 @@ app.put("/listings/:id" ,(req,res) => {
 
 app.delete("/listings/:id",async(req,res) => {
     let{id}=req.params;
-    let deleted=Listing.findByIdAndDelete(id);
+    let deleted=await Listing.findByIdAndDelete(id);
      console.log(deleted);
      res.redirect("/listings");
 });

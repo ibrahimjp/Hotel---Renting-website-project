@@ -1,6 +1,6 @@
-/* body{
-    background-color: pink;
-} */
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
 
 .nav-bar{
     height: 5rem;
@@ -53,4 +53,43 @@ footer {
 
 .f-infolinks a:hover {
     text-decoration: underline;
+}
+
+
+/* cards */
+
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 2rem !important;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+
+
+.listing-link{
+    text-decoration: none; 
+       
+              /* No underline */
+            
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.5;
+    background-color: white;
+}
+
+.row {
+    margin-top: 1rem;
+}
+
+.col {
+    padding: 0.5rem;
 }
