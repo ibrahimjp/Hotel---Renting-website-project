@@ -1,0 +1,56 @@
+/* body{
+    background-color: pink;
+} */
+
+.nav-bar{
+    height: 5rem;
+}
+
+.fa-compass{
+    color: #fe434d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+footer {
+    background-color: #f2f2f2; /* Light grey background to match the example */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.f-info {
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    align-items: center;
+    gap: 10px; /* Space between each row */
+    font-size: 14px;
+    color: #333; /* Dark color for text */
+}
+
+.f-infosocial {
+    margin-bottom: 10px; /* Space below social icons */
+}
+
+.f-infosocial i {
+    margin: 0 5px;
+    font-size: 20px; /* Adjust icon size */
+    opacity: 0.7;
+}
+.f-infosocial i:hover{
+    opacity: 1;
+}
+
+.f-company {
+    margin: 10px 0; /* Space around company name */
+}
+
+.f-infolinks a {
+    color: #007bff; /* Blue color for links */
+    margin: 0 5px; /* Space between Privacy and Terms links */
+    text-decoration: none;
+}
+
+.f-infolinks a:hover {
+    text-decoration: underline;
+}
