@@ -1,24 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderLust</title>
-</head>
-<body>
-    <h3>Listing Details :</h3>
-    <ul>
-        <li><%=listing.title%></li>
-        <li><%=listing.description%></li>
-        <li>&#8377;<%=listing.price.toLocaleString("en-IN")%></li>
-        <li><%=listing.location%></li>
-        <li><%=listing.country%></li>
-    </ul>
+<% layout("layouts/boilerplate") %>
 
-    <a href="/listings/<%=listing.id%>/edit">Edit This Listing</a>
+<div class="row mt-3">
+    <div class="col-8 offset-3">  
+        <h3>Listing Details :</h3>
+    </div>
+    <div class="card col-6 offset-3 show-card">
+        <img src="<%=listing.image.url%>" class="card-img-top show-img" alt="<%=listing.title%>">
+        <div class="card-body">
+            <h5 class="card-title">
+                <b><%= listing.title%></b>
+            </h5>
+            <p class="card-text"><%=listing.description%></p>
+            <p class="card-text">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <%=listing.price.toLocaleString("en-IN")%>/Night
+            </p>
+            <p class="card-text">
+                <i class="fa-solid fa-location-dot"></i>
+                <%=listing.location%>, <%=listing.country%>
+            </p>
+        </div>
 
-    <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-        <button>Delete this Listing</button>
-    </form>
-</body>
-</html>
+        <div class="btns p-3">
+            <div class="row gap-2">
+                <div class="col-6">
+                    <a href="/listings/<%=listing.id%>/edit" class="btn btn-dark col-12">Edit</a>
+                </div>
+                <div class="col-6">
+                    <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
+                        <button class="btn btn-dark col-14 edit-btn">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
