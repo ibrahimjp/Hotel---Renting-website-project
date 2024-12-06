@@ -61,11 +61,13 @@ footer {
     text-decoration: underline;
 }
 
-
+.f-anchor{
+    color: #222222;
+}
 /* cards */
 
 
-.card{
+.listing-card{
     border: none !important;
     margin-bottom: 2rem;
 }
@@ -143,3 +145,101 @@ footer {
 .card-title {
     margin-bottom: 1rem;
 }
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Filters Section */
+  .filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter:hover {
+    background-color: #f1f1f1;
+    border-color: #aaa;
+  }
+  
+  .filter i {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .filter p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Tax Toggle */
+  .tax-toggle {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-left: auto;
+  }
+  
+
+  
+  .listing-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .listing-card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .listing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures images scale proportionally */
+  }
+  
+  .card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card-text b {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

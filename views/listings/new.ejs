@@ -9,6 +9,7 @@
         action="/listings"
         novalidate
         class="needs-validation"
+        enctype="multipart/form-data"
       >
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
@@ -33,14 +34,14 @@
           ></textarea>
           <div class="invalid-feedback">Please Enter a Valid description</div>
         </div>
-
+        
         <div class="mb-3">
-          <label for="image" class="form-label">Image Link</label>
+          <label for="image" class="form-label">Upload Image</label>
           <input
-            type="text"
-            placeholder="Insert image/url link"
+            type="file"
             name="listing[image]"
             class="form-control"
+            required
           />
           
         </div>
