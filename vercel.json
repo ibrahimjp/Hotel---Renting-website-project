@@ -8,8 +8,24 @@
     ],
     "routes": [
       {
+        "src": "/listings/(.*)",
+        "dest": "index.js"
+      },
+      {
+        "src": "/signup",
+        "dest": "index.js"
+      },
+      {
+        "src": "/login",
+        "dest": "index.js"
+      },
+      {
+        "src": "/logout",
+        "dest": "index.js"
+      },
+      {
         "src": "/(.*)",
-        "dest": "/index.js"
+        "dest": "index.js"
       }
     ]
   }
