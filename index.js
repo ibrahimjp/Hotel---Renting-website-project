@@ -1,7 +1,6 @@
 if(process.env.NODE_ENV != 'production'){
     require('dotenv').config();
 }
-import { inject } from "@vercel/analytics"
 console.log(process.env.SECRET);
 const express = require("express");
 const app = express();
@@ -20,6 +19,8 @@ const passport = require("passport");
 const localStrategy = require("passport-local");
 const User = require("./models/user.js");
 const DB_URL=process.env.ATLASDB_URL;
+const { inject } = require("@vercel/analytics");
+
 main().then(() => {
     console.log("Connected to DB");
 }).catch(err => console.log(err));
