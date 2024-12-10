@@ -30,7 +30,7 @@ router.get(
   );
 
 
-// Update Route// Delete Route// Show Route
+// Edit Route// Delete Route// Show Route
 router
   .route("/:id")
   .get( wrapAsync(listingController.showListing))
