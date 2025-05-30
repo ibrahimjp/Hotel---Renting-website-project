@@ -40,6 +40,9 @@ A full-featured hotel booking web platform built for seamless hotel discovery, r
 
 ---
 
+## 📸 Demo
+
+🌐 Live Demo: [Hotel Renting Website](https://hotel-renting-website-project.onrender.com/listings)
 
 ---
 
@@ -60,6 +63,9 @@ A full-featured hotel booking web platform built for seamless hotel discovery, r
 
 ### ☁️ Deployment
 ![Vercel](https://img.shields.io/badge/Vercel-000000.svg?style=flat&logo=Vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7.svg?style=flat&logo=render&logoColor=white)
+
+The application is deployed on Render at: [https://hotel-renting-website-project.onrender.com/listings](https://hotel-renting-website-project.onrender.com/listings)
 
 ---
 
